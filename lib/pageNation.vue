@@ -1,14 +1,13 @@
 <template>
     <div>
         <div class="pageBox">
-            <!--<span class="btn_page page_pre" @click="prePage"></span>-->
+            <span class="btn_page page_pre" @click="prePage"></span>
             <slot :pageList="pageList" :prePage="prePage" :nextPage="nextPage" :goto="goto">
                 <ul class="page_list" v-for="item in pageList" :key="item.no">
                     <li :class="{'page_lsit_active' : item.curr }" @click="goto(item.no)">{{item.no}}</li>
-                    <!-- <li class="page_last">6-10</li> -->
                 </ul>
             </slot>
-            <!--<span class="btn_page page_next" @click="nextPage"></span>-->
+            <span class="btn_page page_next" @click="nextPage"></span>
         </div>
     </div>
 
@@ -76,11 +75,6 @@
                 let pageNum = Math.ceil(this.total / this.perPage);
 
                 if (this.currpage / this.offset)
-                // 保证是整数
-                    this.currpage = (this.currpage - 0) || 1;
-                this.perPage = (this.perPage - 0) || 10;
-                this.totalItems = (this.totalItems - 0) || 0;
-                this.totalPages = (this.totalPages - 0) || 5;
 
                 this.maxPage = Math.ceil(this.totalItems / this.perPage);
 

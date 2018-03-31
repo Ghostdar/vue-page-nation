@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import pageNation from '../lib'
-
+import App from './app.vue'
 
 Vue.use(pageNation)
 

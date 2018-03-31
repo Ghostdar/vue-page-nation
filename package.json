@@ -4,12 +4,18 @@
   "description": "a vue pagenation , Support template\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[s\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[C\u001b[D\u001b[C\u001b[C",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "webpack --mode development"
   },
   "keywords": [
     "vue",
     "pagenation"
   ],
   "author": "nerohua",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.5.16",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
+  }
 }
