@@ -9,3 +9,8 @@ npm install vue-page-nation
 ```
 
 
+```cmd
+
+npm run dev
+
+```
